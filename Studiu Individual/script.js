@@ -2,6 +2,10 @@ function backToHome() {
     window.open("index.html");
 }
 
+function closePage() {
+    window.open("adminPage.html");
+}
+
 function goToLogin() {
     window.open("adminLogin.html");
 }
