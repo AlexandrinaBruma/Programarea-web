@@ -1,0 +1,101 @@
+body {
+    background-color: #fffbf7;
+}
+
+.nav-bar {
+    background-color: #df4000;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    margin: 0;
+}
+
+.link {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding: 0px 10px;
+    color: #fffbf7;
+}
+
+#title-H1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    margin: 10px;
+    color: #df4000;
+}
+
+#hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background-color: #ffd8ab;
+}
+
+#title-H2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    margin: 10px;
+    color: #df4000;
+}
+
+p {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #4c4c4c;
+}
+
+#section1 {
+    margin-top: 50px;
+}
+
+#section2 {
+    margin-top: 90px;
+    /* background-color: bisque;
+    padding: 20px; */
+}
+
+.card {
+    /* background-color: #ffd8ab; */
+    background-color: bisque;
+    border: 1px solid #df4000;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 12px;
+}
+
+.carduri {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#title-H3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+#section3 {
+    margin-top: 90px;
+    padding: 30px;
+    background-color: #ffd8ab;
+}
+
+.button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 16px;
+    background-color: #df4000;
+    color: #fffbf7;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#footer {
+    margin-top: 0px;
+    padding: 30px;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+}

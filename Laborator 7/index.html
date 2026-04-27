@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produse – Selectorii CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header id="top">
+    <h1>Magazin mini</h1>
+    <p class="subtitle">Exersăm selectorii CSS</p>
+    <nav>
+        <a href="#" class="link">Acasă</a>
+        <a href="#" class="link" data-type="promo">Promo</a>
+        <a href="#" class="link">Contact</a>
+    </nav>
+    </header>
+    <main class="container">
+        <section class="panel">
+            <h2>Filtre</h2>
+            <ul class="filters">
+            <li><a href="#" class="chip" data-filter="all">Toate</a></li>
+            <li><a href="#" class="chip" data-filter="food">Alimente</a></li>
+            <li><a href="#" class="chip" data-filter="tech">Tehnică</a></li>
+            </ul>
+            
+        </section>
+        <section class="grid" id="products">
+            <article class="card featured" data-category="food">
+                <h3 class="title">Miere naturală</h3>
+                <p class="desc">Produs local, 500g.</p>
+                <p class="price" data-currency="MDL">120</p>
+                <button class="btn" data-action="buy">Cumpără</button>
+            </article>
+            <article class="card" data-category="tech">
+                <h3 class="title">Mouse wireless</h3>
+                <p class="desc">Conectare rapidă, ergonomic.</p>
+                <p class="price" data-currency="MDL">250</p>
+                <button class="btn" data-action="buy">Cumpără</button>
+            </article>
+            <article class="card sold" data-category="food">
+                <h3 class="title">Ceai negru</h3>
+                <p class="desc">Aromă intensă, 100 plicuri.</p>
+                <p class="price" data-currency="MDL">95</p>
+                <button class="btn" data-action="buy" disabled>Stoc epuizat</button>
+            </article>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <p>© 2026 Mini Magazin</p>
+    </footer>
+
+</body>
+</html>

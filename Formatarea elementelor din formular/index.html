@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatarea elementelor din formular</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form action="#" method="post">
+ 
+    <label for="text">Text:</label><br>
+    <input type="text" id="text" name="text" placeholder="Scrie ceva..."><br><br>
+ 
+    <label for="parola">Password:</label><br>
+    <input type="password" id="parola" name="parola" placeholder="Parolă..." required><br><br>
+ 
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="exemplu@email.com" required><br><br>
+ 
+    <label for="numar">Number:</label><br>
+    <input type="number" id="numar" name="numar" min="0" max="100"><br><br>
+ 
+    <label for="telefon">Telefon:</label><br>
+    <input type="tel" id="telefon" name="telefon" placeholder="+373 xx xxx xxx"><br><br>
+ 
+    <label for="url">URL:</label><br>
+    <input type="url" id="url" name="url" placeholder="https://exemplu.com"><br><br>
+ 
+    <label for="data">Date:</label><br>
+    <input type="date" id="data" name="data"><br><br>
+ 
+    <label for="ora">Time:</label><br>
+    <input type="time" id="ora" name="ora"><br><br>
+ 
+    <label for="datetime">Datetime-local:</label><br>
+    <input type="datetime-local" id="datetime" name="datetime"><br><br>
+ 
+    <label for="luna">Month:</label><br>
+    <input type="month" id="luna" name="luna"><br><br>
+ 
+    <label for="saptamana">Week:</label><br>
+    <input type="week" id="saptamana" name="saptamana"><br><br>
+ 
+    <label for="interval">Range:</label><br>
+    <input type="range" id="interval" name="interval" min="0" max="100"><br><br>
+ 
+    <label for="culoare">Color:</label><br>
+    <input type="color" id="culoare" name="culoare" value="#3498db"><br><br>
+ 
+    <label>Checkbox:</label><br>
+    <input type="checkbox" id="cb" name="checkbox" value="da">
+    <label for="cb">Bifează această opțiune</label><br><br>
+ 
+    <label>Radio:</label><br>
+    <input type="radio" id="r1" name="radio" value="optiunea1">
+    <label for="r1">Opțiunea 1</label><br>
+    <input type="radio" id="r2" name="radio" value="optiunea2">
+    <label for="r2">Opțiunea 2</label><br>
+    <input type="radio" id="r3" name="radio" value="optiunea3">
+    <label for="r3">Opțiunea 3</label><br><br>
+ 
+    <label for="select">Select:</label><br>
+    <select id="select" name="select">
+      <option value="">-- Alege o opțiune --</option>
+      <option value="opt1">Opțiunea 1</option>
+      <option value="opt2">Opțiunea 2</option>
+      <option value="opt3">Opțiunea 3</option>
+    </select><br><br>
+ 
+    <label for="textarea">Textarea:</label><br>
+    <textarea id="textarea" name="textarea" rows="4" cols="40" placeholder="Scrie un text mai lung..."></textarea><br><br>
+ 
+    <label for="fisier">File:</label><br>
+    <input type="file" id="fisier" name="fisier"><br><br>
+ 
+    <label for="cautare">Search:</label><br>
+    <input type="search" id="cautare" name="cautare" placeholder="Caută..."><br><br>
+ 
+    <label>Image (buton cu imagine):</label><br>
+    <input type="image" src="" alt="Trimite"><br><br>
+
+    <input type="text" disabled placeholder="Acest câmp este dezactivat">
+ 
+    <input type="reset" value="Reset">
+    <input type="submit" value="Trimite formularul">
+ 
+  </form>
+    
+</body>
+</html>

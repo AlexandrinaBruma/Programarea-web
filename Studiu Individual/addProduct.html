@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="addProductStyle.css">
+    <script src="script.js"></script>
+    <title>Add new product</title>
+</head>
+<body>
+    <section class="product-section">
+
+        <div class="product">
+            <h1 class="h1-product">Add a new product</h1>
+
+            <div class="form">
+                <div class="left-inputs">
+                        <div class="input-element">
+                        <label for="name" class="label">Introduce the name: </label>
+                        <input type="textbox" id="name" class="input">
+                    </div>
+        
+                    <div class="input-element">
+                        <label for="price" class="label">Introduce the price: </label>
+                        <input type="textbox" id="price" class="input">
+                    </div>
+                </div>
+                
+                <div class="right-inputs">
+                    <div class="input-element">
+                        <label for="colors" class="label">Introduce the colors: </label>
+                        <input type="textbox" id="colors" class="input">
+                    </div>
+        
+                    <div id="image-checkbox" class="checkbox-div">
+                        <input type="checkbox" id="addImage"  class="checkbox">
+                        <p>Add image</p>
+                    </div>
+                
+                    <input id="file-input" type="file" class="add-image">
+                </div>
+                
+            </div>
+        <div class="buttons">
+            <button class="cancel-button">Cancel</button>
+            <button class="save-button">Save</button>
+        </div>
+        
+        <img src="Imagini/close-icon.svg" alt="Close Icon" class="close-button">
+    </section>
+
+    <script>
+        const checkbox = document.getElementById("addImage");
+        const input = document.getElementById("file-input");
+
+        checkbox.addEventListener("change", function () {
+            const check = this.checked;
+
+            if (check) {
+                input.style.display = "block";
+            } else {
+                input.style.display = "none";
+            }
+        });
+    </script>
+    
+</body>
+</html>

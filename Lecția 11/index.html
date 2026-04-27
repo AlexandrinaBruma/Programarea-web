@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Demo Display, Position, Flexbox, Grid, Viewport, Media Queries</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+      color: #222;
+      line-height: 1.5;
+    }
+
+    h1, h2 {
+      margin-bottom: 15px;
+    }
+
+    section {
+      background: white;
+      margin: 20px;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .box {
+      padding: 15px;
+      background: #dbeafe;
+      border: 2px solid #60a5fa;
+      margin: 10px 0;
+      border-radius: 8px;
+    }
+
+    /* 1. DISPLAY */
+    .display-demo span {
+      background: #fde68a;
+      border: 1px solid #f59e0b;
+      padding: 10px;
+      margin: 5px;
+    }
+
+    .block-demo div {
+      display: block;
+      background: #fecaca;
+      border: 1px solid #ef4444;
+      padding: 10px;
+      margin: 5px 0;
+    }
+
+    .inline-demo span {
+      display: inline;
+      background: #bbf7d0;
+      border: 1px solid #22c55e;
+      padding: 10px;
+    }
+
+    .inline-block-demo div {
+      display: inline-block;
+      width: 120px;
+      height: 70px;
+      background: #ddd6fe;
+      border: 1px solid #8b5cf6;
+      padding: 10px;
+      margin: 5px;
+      vertical-align: top;
+    }
+
+    .none-demo .hide {
+      display: none;
+    }
+
+    /* 2. POSITION */
+    .position-container {
+      position: relative;
+      height: 220px;
+      background: #eef2ff;
+      border: 2px dashed #6366f1;
+      border-radius: 10px;
+      margin-top: 10px;
+      padding: 10px;
+    }
+
+    .position-box {
+      width: 120px;
+      padding: 10px;
+      border-radius: 8px;
+      color: white;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .static-box {
+      position: static;
+      background: #6b7280;
+      margin-bottom: 10px;
+    }
+
+    .relative-box {
+      position: relative;
+      top: 10px;
+      left: 20px;
+      background: #3b82f6;
+      margin-bottom: 10px;
+    }
+
+    .absolute-box {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: #ef4444;
+    }
+
+    .fixed-box {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #10b981;
+      z-index: 1000;
+    }
+
+    .sticky-wrapper {
+      height: 200px;
+      overflow: auto;
+      border: 2px solid #cbd5e1;
+      margin-top: 10px;
+      border-radius: 10px;
+      background: #fff;
+    }
+
+    .sticky-box {
+      position: sticky;
+      top: 0;
+      background: #f59e0b;
+      color: white;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    .sticky-content {
+      padding: 15px;
+      height: 300px;
+    }
+
+    /* 3. FLEXBOX */
+    .flex-container {
+      display: flex;
+      gap: 15px;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      background: #ecfeff;
+      padding: 15px;
+      border-radius: 10px;
+      border: 2px solid #22d3ee;
+    }
+
+    .flex-item {
+      background: #06b6d4;
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+      min-width: 120px;
+      text-align: center;
+      flex: 1;
+    }
+
+    /* 4. GRID */
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      gap: 15px;
+      background: #f0fdf4;
+      padding: 15px;
+      border-radius: 10px;
+      border: 2px solid #22c55e;
+    }
+
+    .grid-item {
+      background: #16a34a;
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    /* 5. PAGE LAYOUT */
+    .page-layout {
+      display: grid;
+      grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+      grid-template-columns: 250px 1fr;
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    .header {
+      grid-area: header;
+      background: #2563eb;
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .sidebar {
+      grid-area: sidebar;
+      background: #93c5fd;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .main {
+      grid-area: main;
+      background: #dbeafe;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .footer {
+      grid-area: footer;
+      background: #1d4ed8;
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    /* 6. VIEWPORT UNITS */
+    .viewport-box {
+      width: 50vw;
+      height: 20vh;
+      background: #fbcfe8;
+      border: 2px solid #ec4899;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    /* 7. MEDIA QUERIES */
+    @media (max-width: 900px) {
+      body {
+        background: #fff7ed;
+      }
+
+      .page-layout {
+        grid-template-areas:
+          "header"
+          "sidebar"
+          "main"
+          "footer";
+        grid-template-columns: 1fr;
+      }
+
+      .grid-container {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+      body {
+        background: #fef2f2;
+      }
+
+      .flex-container {
+        flex-direction: column;
+      }
+
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
+
+      .viewport-box {
+        width: 90vw;
+        height: 25vh;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section>
+    <h1>Demo CSS: display, position, flexbox, grid, layout, viewport, media queries</h1>
+    <p>Redimensionează fereastra browserului ca să vezi cum funcționează responsive design-ul.</p>
+  </section>
+
+  <section>
+    <h2>1. Proprietatea display</h2>
+
+    <div class="box">
+      <strong>Inline:</strong>
+      <div class="inline-demo">
+        <span>Inline 1</span>
+        <span>Inline 2</span>
+        <span>Inline 3</span>
+      </div>
+    </div>
+
+    <div class="box">
+      <strong>Block:</strong>
+      <div class="block-demo">
+        <div>Block 1</div>
+        <div>Block 2</div>
+        <div>Block 3</div>
+      </div>
+    </div>
+
+    <div class="box">
+      <strong>Inline-block:</strong>
+      <div class="inline-block-demo">
+        <div>Box 1</div>
+        <div>Box 2</div>
+        <div>Box 3</div>
+      </div>
+    </div>
+
+    <div class="box none-demo">
+      <strong>Display none:</strong>
+      <p>Acest text se vede.</p>
+      <p class="hide">Acest text NU se vede.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>2. Position</h2>
+    <div class="position-container">
+      <div class="position-box static-box">static</div>
+      <div class="position-box relative-box">relative</div>
+      <div class="position-box absolute-box">absolute</div>
+    </div>
+
+    <div class="sticky-wrapper">
+      <div class="sticky-box">sticky</div>
+      <div class="sticky-content">
+        Derulează această zonă și observă cum elementul sticky rămâne sus.
+      </div>
+    </div>
+
+    <div class="position-box fixed-box">fixed</div>
+  </section>
+
+  <section>
+    <h2>3. Flexbox</h2>
+    <div class="flex-container">
+      <div class="flex-item">Element 1</div>
+      <div class="flex-item">Element 2</div>
+      <div class="flex-item">Element 3</div>
+      <div class="flex-item">Element 4</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>4. Grid</h2>
+    <div class="grid-container">
+      <div class="grid-item">Col 1</div>
+      <div class="grid-item">Col 2</div>
+      <div class="grid-item">Col 3</div>
+      <div class="grid-item">Col 4</div>
+      <div class="grid-item">Col 5</div>
+      <div class="grid-item">Col 6</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>5. Layout de pagină</h2>
+    <div class="page-layout">
+      <div class="header">Header</div>
+      <div class="sidebar">Sidebar</div>
+      <div class="main">Main Content</div>
+      <div class="footer">Footer</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>6. Unități viewport</h2>
+    <p>Acest element are <strong>width: 50vw</strong> și <strong>height: 20vh</strong>.</p>
+    <div class="viewport-box">50vw x 20vh</div>
+  </section>
+
+  <section>
+    <h2>7. Media Queries</h2>
+    <p>
+      Încearcă să micșorezi fereastra browserului:
+      <br>- sub 900px se schimbă layout-ul
+      <br>- sub 600px flexbox devine coloană, grid-ul devine pe 1 coloană
+    </p>
+  </section>
+
+</body>
+</html>

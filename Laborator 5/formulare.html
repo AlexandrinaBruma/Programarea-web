@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formular</title>
+</head>
+<body style="background-color: #fff1f3;">
+    <h1>Formulare</h1>
+    <form>
+    <fieldset>
+        <legend style="color: palevioletred;">Application Form</legend>
+
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname">
+
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+
+        <label for="dob">Date of birth:</label>
+        <input type="date" id="dob" name="dob">
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age"><br><br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option>Male</option>
+            <option>Female</option>
+        </select><br><br>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <fieldset>
+            <legend>Positions Available</legend>
+            <input type="radio" id="junior" name="position">
+            <label for="junior">Junior Developer</label>
+
+            <input type="radio" id="mid" name="position">
+            <label for="mid">Mid-level Developer</label>
+
+            <input type="radio" id="senior" name="position">
+            <label for="senior">Senior Developer</label>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Programming Languages</legend>
+            <input type="checkbox" id="java" name="lang">
+            <label for="java">Java</label>
+
+            <input type="checkbox" id="js" name="lang">
+            <label for="js">JavaScript</label>
+
+            <input type="checkbox" id="python" name="lang">
+            <label for="python">Python</label>
+        </fieldset><br>
+
+        <label for="pass">Password:</label>
+        <input type="password" id="pass" name="pass">
+
+        <label for="cpass">Confirm Password:</label>
+        <input type="password" id="cpass" name="cpass"><br><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </fieldset>
+</form>
+
+<br>
+<hr>
+<br>
+
+<form>
+    <fieldset>
+        <legend style="color: palevioletred;">Main Form Title</legend>
+
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname">
+
+        <label for="email2">Email:</label>
+        <input type="email" id="email2" name="email2"><br><br>
+
+        <label for="title">Long Title:</label>
+        <input type="text" id="title" name="title"><br><br>
+
+        <label for="year">Year Started:</label>
+        <select id="year" name="year">
+            <option>January</option>
+            <option>February</option>
+            <option>March</option>
+        </select>
+
+        <input type="number" name="day" placeholder="25">
+        <input type="number" name="year2" placeholder="2008"><br><br>
+
+        <label for="details">Details:</label><br>
+        <textarea id="details" name="details" rows="4" cols="40"></textarea><br><br>
+
+        <button type="submit">Send</button>
+    </fieldset>
+</form>
+
+
+<br>
+<hr>
+<br>
+
+<form>
+    <fieldset>
+        <legend style="color: palevioletred;">Student Registration Form</legend>
+
+        <label for="roll">Roll no:</label>
+        <input type="text" id="roll" name="roll"><br><br>
+
+        <label>Student Name:</label>
+        <input type="text" name="fname" placeholder="First Name">
+        <input type="text" name="lname" placeholder="Last Name"><br><br>
+
+        <label for="father">Father's Name:</label>
+        <input type="text" id="father" name="father"><br><br>
+
+        <label>Date of Birth:</label>
+        <input type="number" placeholder="Day">
+        <input type="number" placeholder="Month">
+        <input type="number" placeholder="Year"><br><br>
+
+        <label for="mobile">Mobile no:</label>
+        <input type="text" value="+91" readonly>
+        <input type="text" id="mobile" name="mobile"><br><br>
+
+        <label for="email3">Email id:</label>
+        <input type="email" id="email3" name="email3"><br><br>
+
+        <label for="pass2">Password:</label>
+        <input type="password" id="pass2" name="pass2"><br><br>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender2"> Male
+        <input type="radio" name="gender2"> Female<br><br>
+
+        <label>Department:</label>
+        <input type="checkbox"> CSE
+        <input type="checkbox"> IT
+        <input type="checkbox"> ECE
+        <input type="checkbox"> Civil
+        <input type="checkbox"> Mech<br><br>
+
+        <label for="course">Course:</label>
+        <select id="course">
+            <option>Select Current Course</option>
+            <option>Bachelor</option>
+            <option>Master</option>
+        </select><br><br>
+
+        <label for="photo">Student photo:</label>
+        <input type="file" id="photo"><br><br>
+
+        <label for="city">City:</label>
+        <input type="text" id="city"><br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" rows="4" cols="40"></textarea><br><br>
+
+        <button type="submit">Register</button>
+    </fieldset>
+</form>
+
+<br>
+<hr>
+<br>
+
+
+    
+</body>
+</html>

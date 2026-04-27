@@ -1,0 +1,11 @@
+input {
+    background-color: aliceblue;
+    border: 1px solid skyblue;
+    border-radius: 8px;
+}
+
+input:required {
+    background-color: aliceblue;
+    border: 1px solid red;
+    border-radius: 8px;
+}

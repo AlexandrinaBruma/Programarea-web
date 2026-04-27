@@ -1,0 +1,30 @@
+body {
+    /* background-image: url("Imagini/bird.png"), url("Imagini/tree.png");
+    background-repeat: space; */
+    background-color: pink;
+    /* background-origin: border-box; */
+}
+
+#E1{
+    border: 10px dashed black;
+    padding: 25px;
+    background-image: url("Imagini/imag3.png");
+    background-origin: content-box;
+    /* background-position: top; */
+    background-position-y: top;
+    background-position-x: right;
+}
+
+#E2{
+    border: 10px dashed black;
+    padding: 25px;
+    background-image: url("Imagini/imag3.png");
+    background-origin: padding-box;
+}
+
+#E3{
+    border: 10px dashed black;
+    padding: 25px;
+    background-image: url("Imagini/imag3.png");
+    background-origin: border-box;
+}

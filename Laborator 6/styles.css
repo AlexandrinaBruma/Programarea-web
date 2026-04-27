@@ -1,0 +1,67 @@
+#red {
+    background-color: red;
+}
+
+#green {
+    background-color: green;
+}
+
+#blue {
+    background-color: blue;
+}
+
+#purple {
+    background-color: blueviolet;
+}
+
+#white {
+    background-color: white;
+}
+
+#org {
+    background-color: orange;
+}
+
+#ylw {
+    background-color: yellow;
+}
+
+#cyan {
+    background-color: skyblue;
+}
+
+#sage-green {
+    background-color: #87AE73;
+}
+
+#bottom-clear {
+    border: 0px white;
+}
+
+#magenta {
+    background-color: rgb(182, 60, 182);
+}
+
+#pink {
+    background-color: palevioletred;
+}
+
+#sky {
+    background-color: #4895EF;
+}
+
+#lime { 
+    background-color: lime;
+}
+
+#gold {
+    background-color: #D6AB00;
+}
+
+#gold2 {
+    background-color: #FFCC00;
+}
+
+#t4 td {
+    border: 1px solid black;
+}

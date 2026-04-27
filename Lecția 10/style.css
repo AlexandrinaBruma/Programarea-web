@@ -1,0 +1,43 @@
+.div1 {
+    height: 100px;
+    width: 300px;
+    border: 1px solid blue;
+}
+
+.div2 {
+    height: 100px;
+    width: 300px;
+    padding: 50px;
+    border: 1px solid plum;
+    box-sizing: border-box;
+}
+
+.div3 {
+    height: 50px;
+    width: 320px;
+    padding: 10px;
+    border: 5px solid palevioletred;
+    margin: 0px;
+}
+
+.div4 {
+    background-color: powderblue;
+    border-radius: 15px;
+    height: 150px;
+    width: 150px;
+    margin: 0 auto;
+    transition: 0.5s;
+}
+
+.div4:hover {
+    transform: rotate(20deg) scale(1.2);
+}
+
+input:disabled {
+    background-color: lightgray;
+    cursor: not-allowed;
+}
+
+input:not(:disabled) {
+    border: 1px dashed palevioletred;
+}

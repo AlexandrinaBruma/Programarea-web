@@ -1,0 +1,59 @@
+body {
+    background-color: lavenderblush;
+}
+
+header {
+    background-color: pink;
+    margin: 50px;
+    padding: 30px;
+    text-align: center;
+    border: 2px dashed #d11d53;
+    border-radius: 20px;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+#h1-hero {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    color: #d11d53;
+}
+
+.bloc {
+    background-color: #f8d3c9;
+    border: 1px solid #e97758;
+    margin: 15px;
+    border-radius: 16px;
+    padding: 16px;
+    text-align: left; 
+}
+
+.blocuri {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 50px; 
+}
+
+#h2-blocuri {
+    margin-left: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}
+
+#title-bloc {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #e97758;
+    font-size: 20px;
+}
+
+.section1{
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+.section2{
+    margin-bottom: 90px;
+}

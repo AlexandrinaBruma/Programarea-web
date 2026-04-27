@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+#top {
+    margin: auto;
+    border-radius: 10px;
+    background-color: #afc5ff;
+    padding: 10px;
+}
+
+.link, .chip {
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.chip:hover {
+    background-color: #fff8e6;
+}
+
+.btn {
+    background-color: #fff8e6;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.2s;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.grid>.card {
+    background-color: #ff9c6d;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    width: 1000px;
+}
+
+.card:not(.sold) {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card.featured {
+    border: 2px solid #ff9c6d;
+    background-color: #fff8e6;
+}
+
+.card.featured .btn {
+    background-color: #ff9c6d;
+}
+
+.card.featured .btn:hover {
+    background-color: #f8b08e;
+}
+
+.btn:hover {
+    color: black;
+    background-color: #dad4c5;
+}
+
+.btn:disabled {
+    cursor: not-allowed;
+    background-color: gray;
+}
+
+[data-currency="MDL"] {
+    font-weight: bold;
+}
+
+[data-type="promo"] {
+    font-weight: bold;
+    color: red;
+}

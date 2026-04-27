@@ -1,0 +1,56 @@
+.f {
+    font-family: 'Segoe UI'; 
+    font-style: italic;
+    font-weight: 400;
+    font-stretch: expanded;
+    font-size: 100%;
+    line-height: 1.5;
+
+}
+
+.p1 {
+    font-family: 'Arial'; 
+    font-style: italic;
+    font-weight: 400;
+    font-size: larger;
+    line-height: 1.5;
+}
+
+.p2 {
+    font-family: 'Arial'; 
+    font-style: italic;
+    font-weight: 400;
+    font-size: larger;
+    line-height: 1.5;
+}
+
+.u {
+    list-style-type: circle;
+    /* list-style-image: url(Images/apple.png); */
+    list-style-position: outside;
+}
+
+.o {
+    background-color: salmon;   
+    padding: 20px;
+    list-style-type: lower-roman;
+}
+
+ol li{
+    background-color: mistyrose;
+    color: darkred;
+    padding: 10px;
+    margin-left: 20px;
+    font-style: italic;
+}
+
+ul {
+    background-color: powderblue;
+    padding: 20px;
+}
+
+ul li {
+    background-color: mistyrose;
+    color: darkblue;
+    margin: 5px;
+}

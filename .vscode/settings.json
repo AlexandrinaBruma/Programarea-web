@@ -1,0 +1,8 @@
+{
+    "salesforce.einsteinForDevelopers.enableAutocompletionsByFileType": {
+        "apex": true,
+        "javascript": true,
+        "css": true,
+        "html": false
+    }
+}
