@@ -145,3 +145,64 @@ body {
     text-transform: uppercase;
     text-align: center;
 }
+
+
+/* TABLETA */
+@media (max-width: 1024px) {
+ 
+    .products {
+        padding: 30px 40px;
+    }
+ 
+    .all-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+ 
+ 
+/* MOBIL */
+@media (max-width: 767px) {
+ 
+    .head {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 16px;
+        padding: 20px 16px;
+        box-sizing: border-box;
+    }
+ 
+    .h1 {
+        font-size: 26px;
+        text-align: left;
+    }
+ 
+    .buttons {
+        flex-direction: column;
+    }
+ 
+    .add-button,
+    .back-button {
+        font-size: 14px;
+        padding: 12px 20px;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+ 
+    .products {
+        padding: 20px 16px;
+        box-sizing: border-box;
+    }
+ 
+    .all-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+ 
+    .product-h3 {
+        font-size: 15px;
+    }
+ 
+    .product-p {
+        font-size: 13px;
+    }
+}

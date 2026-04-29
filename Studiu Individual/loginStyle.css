@@ -105,3 +105,44 @@ body {
     font-size: 16px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
 }
+
+
+/* TABLETA */
+@media (max-width: 1024px) {
+ 
+    .login {
+        width: 100%;
+        padding: 50px 60px 80px 60px;
+    }
+}
+ 
+ 
+/* MOBIL */
+@media (max-width: 767px) {
+ 
+    .login-section {
+        margin: 24px 16px;
+    }
+ 
+    .login {
+        width: 100%;
+        padding: 40px 24px 60px 24px;
+    }
+ 
+    .input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+ 
+    .input:focus {
+        width: 100%;
+    }
+ 
+    .input-element {
+        width: 100%;
+    }
+ 
+    .login-button {
+        width: 100%;
+    }
+}

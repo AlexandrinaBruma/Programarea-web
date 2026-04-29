@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fișa Vizitatorului</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Love Zoo</div>
+        <ul>
+            <li><a href="#intro">Cum funcționează</a></li>
+            <li><a href="#formular">Fișa vizitatorului</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <h1>Fișa Vizitatorului</h1>
+        <p>Completează formularul și află detaliile vizitei tale la Love Zoo</p>
+        <a href="#formular" class="buton">Completează acum</a>
+        <img src="hero-photo.png" alt="Animale drăguțe">
+    </section>
+
+    <section class="intro" id="intro">
+        <span class="eticheta">Cum funcționează</span>
+        <h2>O experiență personalizată pentru tine</h2>
+        <p>Completează fișa digitală a vizitatorului și aplicația va calcula costul biletelor tale, va genera un mesaj personalizat și îți va pregăti toate detaliile vizitei. Simplu, rapid și ușor!</p>
+    </section>
+
+    <section class="formular-sectiune" id="formular">
+        <div class="formular-wrapper">
+            <div class="formular-header">
+                <h2>Completează datele tale</h2>
+            </div>
+
+            <div class="formular-grid">
+
+                <div class="camp">
+                    <label for="nume">Nume</label>
+                    <input type="text" id="nume" placeholder="ex: Maria Ionescu">
+                </div>
+
+                <div class="camp">
+                    <label for="varsta">Vârsta</label>
+                    <input type="number" id="varsta" placeholder="ex: 25" min="1" max="120">
+                </div>
+
+                <div class="camp">
+                    <label for="bilete">Număr de bilete</label>
+                    <input type="number" id="bilete" placeholder="ex: 2" min="1">
+                </div>
+
+                <div class="camp">
+                    <label for="pret">Prețul unui bilet (lei)</label>
+                    <input type="number" id="pret" placeholder="ex: 50" min="0">
+                </div>
+
+                <div class="camp">
+                    <label for="animal">Animalul tău preferat</label>
+                    <select id="animal">
+                        <option value="">— Alege un animal —</option>
+                        <option value="Leu">Leu</option>
+                        <option value="Elefant">Elefant</option>
+                        <option value="Girafă">Girafă</option>
+                        <option value="Pinguin">Pinguin</option>
+                        <option value="Flamingo">Flamingo</option>
+                        <option value="Urs Panda">Urs Panda</option>
+                    </select>
+                </div>
+
+                <div class="camp camp-vizita">
+                    <label>Tipul vizitei</label>
+                    <div class="radio-grup">
+                        <label class="radio-optiune">
+                            <input type="radio" name="vizita" value="Individuală"> Individuală
+                        </label>
+                        <label class="radio-optiune">
+                            <input type="radio" name="vizita" value="Familie"> Familie
+                        </label>
+                        <label class="radio-optiune">
+                            <input type="radio" name="vizita" value="Grup"> Grup
+                        </label>
+                    </div>
+                </div>
+
+                <div class="camp camp-checkbox">
+                    <label class="checkbox-optiune">
+                        <input type="checkbox" id="ghid">
+                        <span>Doresc ghid turistc (+10 lei/bilet)</span>
+                    </label>
+                </div>
+
+                <div class="camp camp-larg">
+                    <label for="mesaj">Mesaj suplimentar</label>
+                    <textarea id="mesaj" placeholder="Scrie orice dorești să ne comunici..." rows="4"></textarea>
+                </div>
+
+            </div>
+
+            <div class="butoane">
+                <button class="buton" onclick="calculeaza()">Calculează!</button>
+                <button class="buton buton-reset" onclick="reset()">Resetează</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="rezultate-sectiune" id="rezultate">
+        <div class="rezultate-wrapper">
+            <h2>Fișa ta de vizitator</h2>
+            <div id="rezultate-continut"></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Love Zoo © 2026. Toate drepturile rezervate.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
